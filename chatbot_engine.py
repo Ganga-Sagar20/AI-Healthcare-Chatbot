@@ -38,7 +38,7 @@ class ChatbotEngine:
             return "📜 **Chat History:**\n\nYou can view your current session's chat history directly on this screen. Scroll up to review previous symptoms and suggestions. (Note: In a fully deployed app, this feature would allow you to download or email your chat logs to your healthcare provider.)"
 
         if user_input_lower == "about project":
-            return "ℹ️ **About Project:**\n\nThis is an AI Healthcare Chatbot built as a Major Project.\n- **Goal:** To provide an intelligent, accessible initial symptom checker and health information assistant.\n- **Tech Stack:** Python, Streamlit for UI, NLTK for NLP preprocessing, and Pandas for data management.\n- **Features:** NLP-based symptom matching, real-time emergency detection, and responsive user interface."
+            return "ℹ️ **About Project:**\n\n- **Project name:** AI Healthcare bot using Python\n- **Name:** Ganga Sagar\n- **Enrollment:** A7605222157\n- **Guide Name:** Dr. Pawan Singh\n\n**Additional Details:**\n- **Tech Stack:** Python, Streamlit for UI, NLTK for NLP preprocessing, and Pandas for data management.\n- **Features:** NLP-based symptom matching, real-time emergency detection, and responsive user interface."
 
         # 1. Check for basic greetings
         greetings = ["hi", "hello", "hey", "good morning", "good evening"]
