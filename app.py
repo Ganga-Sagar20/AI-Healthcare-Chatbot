@@ -13,67 +13,125 @@ st.set_page_config(
 # Custom CSS for the blue healthcare theme and modern UI
 st.markdown("""
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+    
     :root {
-        --primary-blue: #1E88E5;
-        --light-blue: #E3F2FD;
-        --dark-blue: #0D47A1;
-        --text-color: #333333;
+        --primary: #2563EB;
+        --primary-gradient: linear-gradient(135deg, #2563EB 0%, #1D4ED8 100%);
+        --bot-bg: #FFFFFF;
+        --bg-color: #F8FAFC;
+        --text-main: #0F172A;
+        --text-muted: #64748B;
+        --border-color: #E2E8F0;
+        --sidebar-bg: #F1F5F9;
     }
+    
+    /* Global Typography */
+    html, body, [class*="css"] {
+        font-family: 'Inter', sans-serif !important;
+    }
+    
     .stApp {
-        background-color: #F8FBFF;
+        background-color: var(--bg-color);
     }
+    
+    /* Main Headers */
     .main-title {
-        color: var(--dark-blue);
         text-align: center;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-weight: 700;
-        margin-bottom: 0px;
+        font-weight: 800;
+        font-size: 3rem;
+        letter-spacing: -0.03em;
+        margin-bottom: 5px;
+        background: -webkit-linear-gradient(45deg, #1E293B, #3B82F6);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
     .sub-title {
-        color: var(--primary-blue);
+        color: var(--text-muted);
         text-align: center;
-        font-size: 1.2rem;
-        margin-bottom: 30px;
+        font-size: 1.15rem;
+        font-weight: 500;
+        margin-bottom: 40px;
     }
-    .chat-container {
-        border-radius: 15px;
-        padding: 20px;
-        margin-bottom: 20px;
-    }
+    
+    /* Chat Messages Container */
     .user-msg {
-        background-color: var(--primary-blue);
+        background: var(--primary-gradient);
         color: white;
-        padding: 15px;
-        border-radius: 15px 15px 0px 15px;
-        margin-bottom: 15px;
-        text-align: right;
-        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        max-width: 80%;
+        padding: 16px 22px;
+        border-radius: 20px 20px 4px 20px;
+        margin-bottom: 18px;
+        text-align: left;
+        box-shadow: 0 10px 25px -5px rgba(37, 99, 235, 0.3), 0 8px 10px -6px rgba(37, 99, 235, 0.1);
+        max-width: 75%;
         margin-left: auto;
+        font-size: 1.05rem;
+        line-height: 1.5;
+        animation: fadeIn 0.3s ease-in-out;
     }
     .bot-msg {
-        background-color: white;
-        color: var(--text-color);
-        padding: 15px;
-        border-radius: 15px 15px 15px 0px;
-        margin-bottom: 15px;
+        background-color: var(--bot-bg);
+        color: var(--text-main);
+        padding: 16px 22px;
+        border-radius: 20px 20px 20px 4px;
+        margin-bottom: 18px;
         text-align: left;
-        border: 1px solid var(--light-blue);
-        box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        border: 1px solid var(--border-color);
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
         max-width: 80%;
         margin-right: auto;
+        font-size: 1.05rem;
+        line-height: 1.6;
+        animation: fadeIn 0.4s ease-in-out;
     }
+    
+    /* Animation */
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    
+    /* Disclaimer */
     .disclaimer {
         font-size: 0.85rem;
-        color: #7f8c8d;
+        color: #991B1B;
         text-align: center;
-        margin-top: 50px;
-        padding: 10px;
-        border-top: 1px solid #eee;
+        margin-top: 60px;
+        padding: 20px;
+        background-color: #FEF2F2;
+        border: 1px solid #FCA5A5;
+        border-radius: 12px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.1);
     }
-    /* Hide Streamlit branding */
+    
+    /* Sidebar Styling Overrides */
+    [data-testid="stSidebar"] {
+        background-color: var(--sidebar-bg);
+        border-right: 1px solid var(--border-color);
+    }
+    
+    /* Modern Streamlit Buttons */
+    div[data-testid="stButton"] > button {
+        border-radius: 12px;
+        border: 1px solid var(--border-color);
+        background-color: white;
+        color: var(--text-main);
+        font-weight: 600;
+        padding: 0.5rem 1rem;
+        transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    }
+    div[data-testid="stButton"] > button:hover {
+        border-color: var(--primary);
+        color: var(--primary);
+        box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.1), 0 4px 6px -4px rgba(37, 99, 235, 0.1);
+        transform: translateY(-2px);
+    }
+    
+    /* Hide Streamlit elements */
     #MainMenu {visibility: hidden;}
     footer {visibility: hidden;}
+    header {visibility: hidden;}
 </style>
 """, unsafe_allow_html=True)
 
