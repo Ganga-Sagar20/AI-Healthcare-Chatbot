@@ -1,13 +1,14 @@
 symptom,response,severity,emergency
-fever,Drink plenty of water and rest. Take paracetamol if temperature is high.,medium,no
-headache,Stay hydrated, rest in a quiet dark room.,low,no
-cough,Drink warm fluids and rest. If persistent, consult a doctor.,medium,no
-chest pain,Seek emergency medical help immediately. Call emergency services.,high,yes
-breathing difficulty,Call emergency services immediately. Keep calm and sit upright.,high,yes
-stress,Practice deep breathing, meditation, and ensure proper sleep.,low,no
-stomach ache,Avoid heavy meals. Drink ginger tea or clear liquids.,low,no
-vomiting,Stay hydrated with small sips of ORS. Seek help if persistent.,medium,no
-nausea,Rest and avoid strong smells. Try ginger or peppermint.,low,no
-fatigue,Ensure you are getting enough sleep and eating a balanced diet.,low,no
-dizziness,Sit or lie down immediately. Stay hydrated.,medium,no
-throat pain,Gargle with warm salt water. Drink soothing teas.,low,no
+fever,"Drink plenty of water and rest. Take paracetamol if temperature is high.",medium,no
+headache,"Stay hydrated, rest in a quiet dark room.",low,no
+cough,"Drink warm fluids and rest. If persistent, consult a doctor.",medium,no
+chest pain,"Seek emergency medical help immediately. Call emergency services.",high,yes
+breathing difficulty,"Call emergency services immediately. Keep calm and sit upright.",high,yes
+stress,"Practice deep breathing, meditation, and ensure proper sleep.",low,no
+stomach ache,"Avoid heavy meals. Drink ginger tea or clear liquids.",low,no
+vomiting,"Stay hydrated with small sips of ORS. Seek help if persistent.",medium,no
+nausea,"Rest and avoid strong smells. Try ginger or peppermint.",low,no
+fatigue,"Ensure you are getting enough sleep and eating a balanced diet.",low,no
+dizziness,"Sit or lie down immediately. Stay hydrated.",medium,no
+throat pain,"Gargle with warm salt water. Drink soothing teas.",low,no
+
