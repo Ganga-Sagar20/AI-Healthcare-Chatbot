@@ -23,7 +23,7 @@ st.markdown("""
         --text-main: #0F172A;
         --text-muted: #64748B;
         --border-color: #E2E8F0;
-        --sidebar-bg: #F1F5F9;
+        --sidebar-bg: #FDF2F8; /* Soft pink background for the sidebar */
     }
     
     /* Global Typography */
