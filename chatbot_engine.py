@@ -10,7 +10,7 @@ class ChatbotEngine:
     def _load_data(self):
         if not os.path.exists(self.dataset_path):
             # Create a fallback dataframe if file doesn't exist yet
-            return pd.DataFrame(columns=["symptom", "response", "severity", "emergency"])
+            return pd.DataFrame(columns=["symptom", "possible_disease", "precautions", "severity", "emergency"])
         return pd.read_csv(self.dataset_path)
         
     def detect_emergency(self, text):
@@ -75,12 +75,16 @@ class ChatbotEngine:
                 
         # 5. Return Response
         if best_match is not None and highest_score > 0:
-            response_text = best_match['response']
+            disease = best_match.get('possible_disease', 'Specific condition unknown based on basic symptoms')
+            precautions = best_match.get('precautions', 'Please consult a doctor.')
+            
+            response_text = f"**Possible Condition/Disease:** {disease}\n\n**Precautions & Advice:** {precautions}"
+            
             if best_match['emergency'].lower() == 'yes':
-                return f"🚨 EMERGENCY: {response_text}"
+                return f"🚨 **EMERGENCY DETECTED**\n\n{response_text}"
             elif best_match['severity'].lower() == 'high':
-                return f"⚠️ High Severity: {response_text}"
+                return f"⚠️ **High Severity**\n\n{response_text}"
             else:
-                return f"💡 Suggestion: {response_text}"
+                return f"💡 **Suggestion**\n\n{response_text}"
                 
         return "I'm sorry, I couldn't clearly identify the symptom. This chatbot provides general healthcare information only. Please consult a qualified medical professional for an accurate diagnosis."
