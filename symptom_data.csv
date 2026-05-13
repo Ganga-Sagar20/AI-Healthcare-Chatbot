@@ -1,14 +1,16 @@
 symptom,response,severity,emergency
-fever,"Drink plenty of water and rest. Take paracetamol if temperature is high.",medium,no
-headache,"Stay hydrated, rest in a quiet dark room.",low,no
-cough,"Drink warm fluids and rest. If persistent, consult a doctor.",medium,no
-chest pain,"Seek emergency medical help immediately. Call emergency services.",high,yes
-breathing difficulty,"Call emergency services immediately. Keep calm and sit upright.",high,yes
-stress,"Practice deep breathing, meditation, and ensure proper sleep.",low,no
-stomach ache,"Avoid heavy meals. Drink ginger tea or clear liquids.",low,no
-vomiting,"Stay hydrated with small sips of ORS. Seek help if persistent.",medium,no
-nausea,"Rest and avoid strong smells. Try ginger or peppermint.",low,no
-fatigue,"Ensure you are getting enough sleep and eating a balanced diet.",low,no
-dizziness,"Sit or lie down immediately. Stay hydrated.",medium,no
-throat pain,"Gargle with warm salt water. Drink soothing teas.",low,no
-
+fever,"Monitor your temperature regularly. Drink plenty of fluids like water, clear broths, and juices to stay hydrated. Rest adequately and take over-the-counter fever reducers like paracetamol if necessary. If fever persists for more than 3 days, consult a doctor.",medium,no
+headache,"Rest in a quiet, dark room to reduce sensory input. Apply a cold or warm compress to your head or neck. Ensure you are well-hydrated and have eaten. Over-the-counter pain relievers can help. Seek medical attention if it is the 'worst headache of your life' or accompanied by vision changes.",low,no
+cough,"Drink warm fluids with honey and lemon to soothe the throat. Use a humidifier to add moisture to the air. Rest and avoid irritants like smoke. If the cough persists for over two weeks or produces blood, seek medical advice.",medium,no
+chest pain,"🚨 EMERGENCY: Chest pain can be a sign of a heart attack. Seek emergency medical help immediately. Call emergency services (like 911 or 112). Do not try to drive yourself to the hospital.",high,yes
+breathing difficulty,"🚨 EMERGENCY: Severe shortness of breath requires immediate medical attention. Call emergency services right away. Keep calm, sit upright to expand the chest, and try to take slow, deep breaths while waiting for help.",high,yes
+stress,"Practice relaxation techniques such as deep breathing, meditation, or yoga. Maintain a healthy sleep schedule (7-9 hours) and engage in regular physical exercise. Consider speaking to a therapist or counselor if stress becomes overwhelming.",low,no
+stomach ache,"Avoid heavy, spicy, or fatty meals. Drink clear liquids like water, ginger tea, or clear broth in small sips. Use a heating pad on your abdomen. If pain is severe, sudden, or accompanied by vomiting blood, seek urgent care.",low,no
+vomiting,"Do not eat or drink anything for a few hours. Then, slowly sip clear liquids or oral rehydration salts (ORS) to prevent dehydration. Gradually introduce bland foods like bananas, rice, or toast. Seek help if vomiting lasts more than 24 hours.",medium,no
+nausea,"Rest in a propped-up position to avoid acid reflux. Sip cold water or ginger ale slowly. Try eating small amounts of bland foods or ginger candies. Avoid strong smells and sudden movements.",low,no
+fatigue,"Ensure you are getting 7-9 hours of quality sleep per night. Maintain a balanced diet rich in iron and vitamins, and stay hydrated. Regular, moderate exercise can boost energy levels. If fatigue is persistent and unexplained, consult a doctor.",low,no
+dizziness,"Sit or lie down immediately to prevent a fall. Avoid sudden position changes. Drink plenty of water and have a small snack if you haven't eaten. If dizziness is accompanied by chest pain or difficulty speaking, seek emergency help.",medium,no
+throat pain,"Gargle with warm salt water several times a day. Drink soothing, warm liquids like honey-lemon tea. Use throat lozenges. Avoid smoking and second-hand smoke. If accompanied by a high fever or difficulty swallowing, consult a doctor.",low,no
+diarrhea,"Drink plenty of clear fluids or oral rehydration salts (ORS) to replace lost electrolytes. Avoid dairy products, caffeine, and greasy foods. Eat bland foods like the BRAT diet (Bananas, Rice, Applesauce, Toast). Seek help if symptoms persist for over 2 days.",medium,no
+allergic reaction,"For mild reactions (like a rash or sneezing), an over-the-counter antihistamine may help. 🚨 EMERGENCY: If you experience swelling of the face/throat, difficulty breathing, or dizziness, use an EpiPen if available and call emergency services immediately.",high,yes
+back pain,"Apply a cold pack for the first 48 hours, then switch to a heating pad. Rest, but try to keep moving with gentle stretching or walking. Over-the-counter pain relievers can help. Seek medical attention if the pain radiates down your leg or is accompanied by numbness.",medium,no

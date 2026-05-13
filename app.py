@@ -103,11 +103,29 @@ with st.sidebar:
         
     st.markdown("---")
     st.subheader("📌 Quick Links")
-    st.markdown("🩺 [Symptoms Checker](#)")
-    st.markdown("💡 [Health Tips](#)")
-    st.markdown("🚨 [Emergency Protocol](#)")
-    st.markdown("📜 [Chat History](#)")
-    st.markdown("ℹ️ [About Project](#)")
+    
+    def quick_link_action(text):
+        st.session_state.messages.append({"role": "user", "content": text})
+        with st.spinner("Processing..."):
+            time.sleep(0.5)
+            response = engine.generate_response(text)
+        st.session_state.messages.append({"role": "assistant", "content": response})
+
+    if st.button("🩺 Symptoms Checker", use_container_width=True):
+        quick_link_action("Symptoms Checker")
+        st.rerun()
+    if st.button("💡 Health Tips", use_container_width=True):
+        quick_link_action("Health Tips")
+        st.rerun()
+    if st.button("🚨 Emergency Protocol", use_container_width=True):
+        quick_link_action("Emergency Protocol")
+        st.rerun()
+    if st.button("📜 Chat History", use_container_width=True):
+        quick_link_action("Chat History")
+        st.rerun()
+    if st.button("ℹ️ About Project", use_container_width=True):
+        quick_link_action("About Project")
+        st.rerun()
     
     st.markdown("---")
     st.caption("AI Healthcare Chatbot Major Project")
